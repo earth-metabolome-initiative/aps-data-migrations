@@ -4,10 +4,17 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-aps = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema" }
-aps-traits = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema" }
+aps = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema", branch = "chemical-entities" }
+aps-traits = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema", branch = "chemical-entities" }
 diesel-builders = { git = "https://github.com/LucaCappelletti94/diesel-builders", branch = "main" }
 validation-errors = { git = "https://github.com/LucaCappelletti94/diesel-builders", branch = "main" }
+serde = { version = "1", features = ["derive"] }
+csv = "1"
+flate2 = "1"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "rustls-tls"] }
+tar = "0.4"
+indicatif = "0.17"
+zip = "2"
 
 [dev-dependencies]
-aps-test-utils = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema"}
+aps-test-utils = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema", branch = "chemical-entities" }
