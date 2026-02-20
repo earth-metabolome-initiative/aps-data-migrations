@@ -1,0 +1,13 @@
+[package]
+name = "aps-data-migrations"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aps = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema" }
+aps-traits = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema" }
+diesel-builders = { git = "https://github.com/LucaCappelletti94/diesel-builders", branch = "main" }
+validation-errors = { git = "https://github.com/LucaCappelletti94/diesel-builders", branch = "main" }
+
+[dev-dependencies]
+aps-test-utils = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema"}
